@@ -260,10 +260,10 @@ pause''';
               alignment: Alignment.centerLeft,
               child: TextButton.icon(
                 onPressed: _navigateToHelp,
-                icon: const Icon(Icons.help_outline, color: Color(0xFFFF0000), size: 15),
+                icon: const Icon(Icons.help_outline, color: Color(0xFFFF0000), size: 16),
                 label: const Text(
-                  "comment se connecter ?",
-                  style: TextStyle(color: Color(0xFFFF0000), fontSize: 12),
+                  "Comment se connecter ?",
+                  style: TextStyle(color: Color(0xFFFF0000), fontSize: 13),
                 ),
               ),
             ),
@@ -315,7 +315,7 @@ pause''';
                         child: Icon(
                           _isConnected ? Icons.close : Icons.sensors,
                           color: _isConnected ? const Color(0xFFFF0000) : Colors.black,
-                          size: 40,
+                          size: 105,
                         ),
                       ),
                     ),
@@ -442,7 +442,7 @@ class _BatScriptScreenState extends State<BatScriptScreen> {
     return Scaffold(
       backgroundColor: const Color(0xFF000000),
       appBar: AppBar(
-        title: const Text("configuration server .bat", style: TextStyle(fontSize: 14, fontFamily: "monospace")),
+        title: const Text("Config de server .bat", style: TextStyle(fontSize: 16, fontFamily: "monospace")),
         backgroundColor: const Color(0xFF000000),
         elevation: 0,
         leading: IconButton(
@@ -506,11 +506,11 @@ class ConnectionHelpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: 4,
       child: Scaffold(
         backgroundColor: const Color(0xFF000000),
         appBar: AppBar(
-          title: const Text("guide de connexion", style: TextStyle(fontSize: 15, fontFamily: "monospace")),
+          title: const Text("Guide de connexion", style: TextStyle(fontSize: 16, fontFamily: "monospace")),
           backgroundColor: const Color(0xFF000000),
           elevation: 0,
           leading: IconButton(
