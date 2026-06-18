@@ -526,6 +526,7 @@ class ConnectionHelpScreen extends StatelessWidget {
               Tab(text: "windows"),
               Tab(text: "macos"),
               Tab(text: "android"),
+              Tab(text: "contact @"),
             ],
           ),
         ),
@@ -534,6 +535,7 @@ class ConnectionHelpScreen extends StatelessWidget {
             WindowsHelpView(),
             MacHelpView(),
             AndroidHelpView(),
+            ContactView(),
           ],
         ),
       ),
@@ -660,6 +662,27 @@ class AndroidHelpView extends StatelessWidget {
         HelpStepToggle(
           title: "etape 3 : verifier l ip reseau de l appareil",
           content: "Allez dans Paramètres Android -> À propos du téléphone -> Statut (ou Infos d'état) -> Adresse IP.\n\nTant que l'appareil reste connecté au même réseau Wi-Fi local que cet appareil Android, la liaison s'effectuera directement via cette IP.",
+        ),
+      ],
+    );
+  }
+}
+
+class ContactView extends StatelessWidget {
+  const ContactView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      padding: const EdgeInsets.all(16),
+      children: const [
+        HelpStepToggle(
+          title: "Vous avez une idée de mise a jour ?",
+          content: "Telegram: bxz_95",
+        ),
+        HelpStepToggle(
+          title: "Vous rencontrez un bug ?",
+          content: "Telegram: bxz_95",
         ),
       ],
     );
