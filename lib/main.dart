@@ -325,7 +325,7 @@ pause''';
                                             child: Align(
                                               alignment: Alignment.centerLeft,
                                               child: Text(
-                                                "- Modification du bouton de connexion.\n- Ajout édition pour le script server.bat .",
+                                                "- Modification du bouton de connexion.\n- Ajout édition pour le script server.bat.",
                                                 style: TextStyle(color: Colors.white70, fontSize: 12, height: 1.4, fontFamily: "monospace"),
                                               ),
                                             ),
@@ -789,7 +789,6 @@ class ContactView extends StatelessWidget {
         HelpStepToggle(
           title: "Vous avez une idée de mise a jour ?",
           content: "- Rendez vous dans la partie commentaires sur le site ou vous avez télécharger l appli.",
-          icon: Icons.update,
         ),
         HelpStepToggle(
           title: "Vous rencontrez un bug ?",
