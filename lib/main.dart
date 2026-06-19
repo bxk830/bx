@@ -349,7 +349,7 @@ pause''';
                                             child: Align(
                                               alignment: Alignment.centerLeft,
                                               child: Text(
-                                                "- Adaptation de l UI pour ios et android.\n- Langues qui seront ajouter a l avenir : (anglais, allemand, portugais, etc...).",
+                                                "- Adaptation de l UI pour ios et android.\n- Langues qui seront ajouter a l avenir : (anglais, allemand, portugais).",
                                                 style: TextStyle(color: Colors.white70, fontSize: 12, height: 1.4, fontFamily: "monospace"),
                                               ),
                                             ),
