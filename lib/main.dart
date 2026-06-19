@@ -141,7 +141,7 @@ pause''';
         _isConnected = true;
         _isLoading = false;
       });
-      _addLog("connexion établie");
+      _addLog("connexion établie :)");
 
       _socket!.listen(
         (List<int> data) {
