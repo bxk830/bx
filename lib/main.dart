@@ -289,7 +289,7 @@ pause''';
                               Row(
                                 children: [
                                   const Text(
-                                    "mises à jour",
+                                    "mises à jours / News",
                                     style: TextStyle(
                                       color: Color(0xFFFF0000),
                                       fontSize: 14,
@@ -369,7 +369,7 @@ pause''';
                 },
                 icon: const Icon(Icons.update, color: Color(0xFFFF0000), size: 16),
                 label: const Text(
-                  "Mises a jours",
+                  "M.A.J. & News",
                   style: TextStyle(color: Color(0xFFFF0000), fontSize: 13),
                 ),
               ),
