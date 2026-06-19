@@ -325,7 +325,7 @@ pause''';
                                             child: Align(
                                               alignment: Alignment.centerLeft,
                                               child: Text(
-                                                "- Modification du bouton de connexion.\n- Ajout édition pour le script server.bat.",
+                                                "- Modification du bouton de connexion.\n- Ajout editeur pour le script server.bat.",
                                                 style: TextStyle(color: Colors.white70, fontSize: 12, height: 1.4, fontFamily: "monospace"),
                                               ),
                                             ),
