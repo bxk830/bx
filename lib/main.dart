@@ -289,7 +289,7 @@ pause''';
                               Row(
                                 children: [
                                   const Text(
-                                    "mises à jours / News",
+                                    "M.A.J. & News",
                                     style: TextStyle(
                                       color: Color(0xFFFF0000),
                                       fontSize: 14,
