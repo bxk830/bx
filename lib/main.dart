@@ -307,8 +307,58 @@ pause''';
                               const SizedBox(height: 10),
                               const Divider(color: Colors.white10, height: 1),
                               const SizedBox(height: 10),
-                              const Expanded(
-                                child: VersionView(),
+                              Expanded(
+                                child: ListView(
+                                  children: [
+                                    Theme(
+                                      data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+                                      child: const ExpansionTile(
+                                        iconColor: Color(0xFFFF0000),
+                                        collapsedIconColor: Colors.white38,
+                                        title: Text(
+                                          "Version 1.0.0",
+                                          style: TextStyle(color: Colors.white, fontSize: 13, fontWeight: FontWeight.bold, fontFamily: "monospace"),
+                                        ),
+                                        children: [
+                                          Padding(
+                                            padding: EdgeInsets.all(8.0),
+                                            child: Align(
+                                              alignment: Alignment.centerLeft,
+                                              child: Text(
+                                                "- Modification du bouton de connexion.\n- Ajout édition pour le script server.bat .",
+                                                style: TextStyle(color: Colors.white70, fontSize: 12, height: 1.4, fontFamily: "monospace"),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    const Divider(color: Colors.white10),
+                                    Theme(
+                                      data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+                                      child: const ExpansionTile(
+                                        iconColor: Color(0xFFFF0000),
+                                        collapsedIconColor: Colors.white38,
+                                        title: Text(
+                                          "Version 1.0.1 (à venir)",
+                                          style: TextStyle(color: Colors.white, fontSize: 13, fontWeight: FontWeight.bold, fontFamily: "monospace"),
+                                        ),
+                                        children: [
+                                          Padding(
+                                            padding: EdgeInsets.all(8.0),
+                                            child: Align(
+                                              alignment: Alignment.centerLeft,
+                                              child: Text(
+                                                "- Langue actuellement en français, de nouvelles langues seront ajoutées à l'avenir.",
+                                                style: TextStyle(color: Colors.white70, fontSize: 12, height: 1.4, fontFamily: "monospace"),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ],
                           ),
@@ -317,13 +367,14 @@ pause''';
                     },
                   );
                 },
-                icon: const icn(Icons.help_outline, color: Color(0xFFFF0000), size: 16),
-                label: const mxk(
+                icon: const Icon(Icons.help_outline, color: Color(0xFFFF0000), size: 16),
+                label: const Text(
                   "Mises a jours",
                   style: TextStyle(color: Color(0xFFFF0000), fontSize: 13),
                 ),
               ),
             ),
+
 
             const SizedBox(height: 25),
 
