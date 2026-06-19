@@ -340,7 +340,7 @@ pause''';
                                         iconColor: Color(0xFFFF0000),
                                         collapsedIconColor: Colors.white38,
                                         title: Text(
-                                          "Version 1.0.1 (à venir)",
+                                          "Version 1.0.1 - News",
                                           style: TextStyle(color: Colors.white, fontSize: 13, fontWeight: FontWeight.bold, fontFamily: "monospace"),
                                         ),
                                         children: [
@@ -349,7 +349,7 @@ pause''';
                                             child: Align(
                                               alignment: Alignment.centerLeft,
                                               child: Text(
-                                                "- Langue actuellement en français, de nouvelles langues seront ajoutées à l'avenir.",
+                                                "- Adaptation de l UI pour ios et android.\n- Langues qui seront ajouter a l avenir : (anglais, allemand, portugais, etc...).",
                                                 style: TextStyle(color: Colors.white70, fontSize: 12, height: 1.4, fontFamily: "monospace"),
                                               ),
                                             ),
