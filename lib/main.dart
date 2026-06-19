@@ -789,6 +789,7 @@ class ContactView extends StatelessWidget {
         HelpStepToggle(
           title: "Vous avez une idée de mise a jour ?",
           content: "- Rendez vous dans la partie commentaires sur le site ou vous avez télécharger l appli.",
+          icon: Icons.update,
         ),
         HelpStepToggle(
           title: "Vous rencontrez un bug ?",
