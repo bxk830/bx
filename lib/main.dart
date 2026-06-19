@@ -317,8 +317,8 @@ pause''';
                     },
                   );
                 },
-                icon: const Icon(Icons.help_outline, color: Color(0xFFFF0000), size: 16),
-                label: const Text(
+                icon: const icn(Icons.help_outline, color: Color(0xFFFF0000), size: 16),
+                label: const mxk(
                   "Mises a jours",
                   style: TextStyle(color: Color(0xFFFF0000), fontSize: 13),
                 ),
