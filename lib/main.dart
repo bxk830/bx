@@ -255,7 +255,7 @@ pause''';
               ],
             ),
             
-            Align(
+          Align(
               alignment: Alignment.centerLeft,
               child: TextButton.icon(
                 onPressed: _navigateToHelp,
@@ -268,36 +268,65 @@ pause''';
             ),
 
             Align(
-               alignment: Alignment.centerLeft,
-               child: TextButton.icon(
-                 onPressed: () {
-                   showModalBottomSheet(
-                     context: context,
-                     backgroundColor: const Color(0xFF050505),
-                     showDragHandle: true,
-                     isScrollControlled: true,
-                     useSafeArea: true,
-                     shape: const RoundedRectangleBorder(
-                       borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
-                     ),
-                     builder: (context) {
-                       return const SizedBox(
-                         height: 350,
-                         child: VersionView(),
-                       );
-                     },
-                   );
-                 },
-                 icon: const Icon(Icons.help_outline, color: Color(0xFFFF0000), size: 16),
-                 label: const Text(
-                   "Mises a jours",
-                   style: TextStyle(color: Color(0xFFFF0000), fontSize: 13),
-                 ),
-               ),
-             )
-
+              alignment: Alignment.centerLeft,
+              child: TextButton.icon(
+                onPressed: () {
+                  showDialog(
+                    context: context,
+                    builder: (context) {
+                      return Dialog(
+                        backgroundColor: const Color(0xFF050505),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(4),
+                          side: const BorderSide(color: Colors.white10),
+                        ),
+                        child: Container(
+                          padding: const EdgeInsets.all(16),
+                          width: double.infinity,
+                          height: 350,
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  const Text(
+                                    "mises à jour",
+                                    style: TextStyle(
+                                      color: Color(0xFFFF0000),
+                                      fontSize: 14,
+                                      fontFamily: "monospace",
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  const Spacer(),
+                                  GestureDetector(
+                                    onTap: () => Navigator.pop(context),
+                                    child: const Icon(Icons.close, color: Colors.white38, size: 18),
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(height: 10),
+                              const Divider(color: Colors.white10, height: 1),
+                              const SizedBox(height: 10),
+                              const Expanded(
+                                child: VersionView(),
+                              ),
+                            ],
+                          ),
+                        ),
+                      );
+                    },
+                  );
+                },
+                icon: const Icon(Icons.help_outline, color: Color(0xFFFF0000), size: 16),
+                label: const Text(
+                  "Mises a jours",
+                  style: TextStyle(color: Color(0xFFFF0000), fontSize: 13),
+                ),
+              ),
+            ),
 
             const SizedBox(height: 25),
+
 
             GestureDetector(
               onTapDown: (_) => _animationController.forward(),
