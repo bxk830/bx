@@ -261,23 +261,41 @@ pause''';
                 onPressed: _navigateToHelp,
                 icon: const Icon(Icons.help_outline, color: Color(0xFFFF0000), size: 16),
                 label: const Text(
-                  "Comment se connecter ?\n",
+                  "Comment se connecter ?",
                   style: TextStyle(color: Color(0xFFFF0000), fontSize: 13),
                 ),
               ),
             ),
 
             Align(
-              alignment: Alignment.centerLeft,
-              child: TextButton.icon(
-                onPressed: _navigateToHelp,
-                icon: const Icon(Icons.help_outline, color: Color(0xFFFF0000), size: 16),
-                label: const Text(
-                  "Mises a jours",
-                  style: TextStyle(color: Color(0xFFFF0000), fontSize: 13),
-                ),
-              ),
-            ),
+               alignment: Alignment.centerLeft,
+               child: TextButton.icon(
+                 onPressed: () {
+                   showModalBottomSheet(
+                     context: context,
+                     backgroundColor: const Color(0xFF050505),
+                     showDragHandle: true,
+                     isScrollControlled: true,
+                     useSafeArea: true,
+                     shape: const RoundedRectangleBorder(
+                       borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
+                     ),
+                     builder: (context) {
+                       return const SizedBox(
+                         height: 350,
+                         child: VersionView(),
+                       );
+                     },
+                   );
+                 },
+                 icon: const Icon(Icons.help_outline, color: Color(0xFFFF0000), size: 16),
+                 label: const Text(
+                   "Mises a jours",
+                   style: TextStyle(color: Color(0xFFFF0000), fontSize: 13),
+                 ),
+               ),
+             )
+
 
             const SizedBox(height: 25),
 
