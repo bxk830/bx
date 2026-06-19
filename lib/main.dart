@@ -196,7 +196,6 @@ pause''';
     }
   }
 
-  // Fonction mise à jour prenant la taille optionnelle en second paramètre
   InputDecoration _customInputStyle(String label, [double fontSize = 13]) {
     return InputDecoration(
       labelText: label,
@@ -262,11 +261,24 @@ pause''';
                 onPressed: _navigateToHelp,
                 icon: const Icon(Icons.help_outline, color: Color(0xFFFF0000), size: 16),
                 label: const Text(
-                  "Comment se connecter ?",
+                  "Comment se connecter ?\n",
                   style: TextStyle(color: Color(0xFFFF0000), fontSize: 13),
                 ),
               ),
             ),
+
+            Align(
+              alignment: Alignment.centerLeft,
+              child: TextButton.icon(
+                onPressed: _navigateToHelp,
+                icon: const Icon(Icons.help_outline, color: Color(0xFFFF0000), size: 16),
+                label: const Text(
+                  "Mises a jours",
+                  style: TextStyle(color: Color(0xFFFF0000), fontSize: 13),
+                ),
+              ),
+            ),
+
             const SizedBox(height: 25),
 
             GestureDetector(
