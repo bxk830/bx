@@ -690,11 +690,11 @@ class ContactView extends StatelessWidget {
       children: const [
         HelpStepToggle(
           title: "Vous avez une idée de mise a jour ?",
-          content: "- Telegram: bxz_95",
+          content: "- Rendez vous dans la partie commentaires sur le site ou vous avez télécharger l appli.",
         ),
         HelpStepToggle(
           title: "Vous rencontrez un bug ?",
-          content: "- Telegram: bxz_95",
+          content: "- Rendez vous dans la partie commentaires sur le site ou vous avez télécharger l appli.",
         ),
       ],
     );
